@@ -11,7 +11,7 @@ import Select from '../components/inputselect'
             <h1 className='font-semibold my-5 text-2xl'>Register</h1>
             <p className='mb-2'>Choose an ID and enter number</p>
             <Select/>
-            <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Enter ID No'/>
+            <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Enter ID No.'/>
             <Link to={'/auth'} className='w-full'>
             <Button label="Proceed" handleClick={() => {}} />
             </Link>

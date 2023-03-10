@@ -38,7 +38,7 @@ import Select from '../components/inputselect'
     ))}
     </select>
     <div>
-        <h1 className='font-semibold'>Choose PVC collation centre</h1>
+        <h1 className='font-semibold p-2'>Choose PVC collation centre</h1>
     <select className='w-full h-12 rounded-md border-1  border-gray-200 px-2 mb-20 bg-gray-100'>
     {options.map((option) => (
     <option value={option.value}>{option.label}</option>

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../components/button'
 import imageToAdd from "../components/messageicon.png";
+import TextInput from '../components/textinput';
 
 
  const Verify = () => {
@@ -12,6 +13,20 @@ import imageToAdd from "../components/messageicon.png";
         <p>Enter the 6-digit OTP sent to 0803xxxxxx94</p>
       <div className='mx-auto'>
       <img className='m-auto mb-5 mt-5' src={imageToAdd} alt="Image" />
+      </div>
+      <div className='m-auto'>
+      <input className='w-6 m-3 border-b-4  border-green-800' 
+      type='text' max='1'></input>
+      <input className='w-6 m-3 border-b-4  border-green-800' 
+      type='text'></input>
+      <input className='w-6 m-3 border-b-4  border-green-800' 
+      type='text'></input>
+      <input className='w-6 m-3 border-b-4  border-green-800' 
+      type='text'></input>
+      <input className='w-6 m-3 border-b-4  border-green-800' 
+      type='text'></input>
+      <input className='w-6 m-3 border-b-4  border-green-800' 
+      type='text'></input>
       </div>
       <p className='px-2'>Didn't recieve an OTP?<Link to={'/confirm'} className='text-green-900'>
         Resend

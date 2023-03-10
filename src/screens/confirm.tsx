@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../components/button'
 import TextInput from '../components/textinput';
-
+import imageyy from "../components/Ellipse 181.png";
 
 
  const Confirm = () => {
@@ -10,6 +10,7 @@ import TextInput from '../components/textinput';
     return(
     <div className='h-screen flex-column items-center justify-center px-6'>
         <h1 className='font-bold my-5 text-2xl'>Confirm your personal information</h1>
+        <img className='p-3 m-auto'src={imageyy} alt="Image" />
     <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Full Name'/>
         <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Date of birth'/>
         <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Enter Phone No'/>
