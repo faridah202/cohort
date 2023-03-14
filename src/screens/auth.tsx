@@ -7,14 +7,18 @@ import TextInput from '../components/textinput'
     const [value, setValue] = React.useState('');
     return(
     <div className='h-screen flex-column items-center justify-center px-6'>
-        <h1 className='font-bold my-5 text-2xl'>Verify Your Identity</h1>
-        <h5 className='font-semibold p-2'>Enter the Phone No. linked to your BVN</h5>
-        <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Enter Phone No'/>
-        <h5 className='font-semibold p-2'>Enter Your Mother's Maiden Name</h5>
-        <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Enter Name'/>
+        <h1 className='font-bold text-2xl'>Verify Your Identity</h1>
+        <h5 className='text-lg p-2'>Enter the 6-digit that was sent to your email adress</h5>   
+        <TextInput value={value} handleChange={(e) => setValue(e)} placeholder=''/>
+        <div className='flex justify-between mb-7'>
+        <p className='text-left'>OTP not sent?</p>
+        <p className='text-right font-semibold'>Resend</p>
+        </div>
         <Link to={'/verify2'} className='w-full'>
             <Button label="Proceed" handleClick={() => {}} />
             </Link>
+            <p className='text-center mt-3'>Want to try another method of verification?</p>
+            <p className='m-auto align-center font-bold text-lg text-center'>Click here</p>
     </div>
         
     )

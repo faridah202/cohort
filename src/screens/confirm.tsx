@@ -9,17 +9,10 @@ import imageyy from "../components/Ellipse 181.png";
     const [value, setValue] = React.useState('');
     return(
     <div className='h-screen flex-column items-center justify-center px-6'>
-        <h1 className='font-bold my-5 text-2xl'>Confirm your personal information</h1>
-        <img className='p-3 m-auto'src={imageyy} alt="Image" />
-    <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Full Name'/>
-        <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Date of birth'/>
-        <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Enter Phone No'/>
-        <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='State of origin'/>
-        <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Nex of kin'/>
-        <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='City'/>
-        <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Home Adress'/>
+        <h1 className='font-bold my-5 text-2xl'>Authentication</h1>
+    <TextInput value={value} handleChange={(e) => setValue(e)} placeholder='Enter VIN'/>
      <Link to={'/pol'} className='w-full'>
-        <Button label="Proceed" handleClick={() => {}} />
+        <Button label="Login and vote" handleClick={() => {}} />
         </Link>
     </div>
         
